@@ -4,7 +4,7 @@ import random
 lst= ['stone','paper','scissors']
 i=0
 while i<4:
-    print("Enter one of the option :- \n1.STONE\n2.PAPER\n3.SCISSORS")
+    print("Enter one of the option :- \n1.STONE\n2.PAPER\n3.SCISSORS\n4.EXIT")
     ans=int(input())
     current=random.choice(lst)
     print('PC choice : ',current)
@@ -27,6 +27,9 @@ while i<4:
         print("You Lose")
     elif current == 'scissors' and ans == 3:
         print("DRAW")
+    elif ans == 4:
+        print("Thank You")
+        exit()
     else:
         print("invalid option,please try again")
 
